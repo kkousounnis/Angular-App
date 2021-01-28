@@ -8,6 +8,8 @@ import { Component, OnInit, Input } from '@angular/core';
 
 export class CalculatorComponent implements OnInit {
   title: string = "Angular Calculator!!!";
+  firtsValue: any;
+  secondValue: any;
   count: number = 20;
   finalValue: number = 0;
 

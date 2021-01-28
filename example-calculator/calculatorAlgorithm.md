@@ -21,3 +21,5 @@ Switch
     
 step 5
 repeat the process
+
+https://hdtuto.com/article/angular-11-crud-with-bootstrap-rest-api
