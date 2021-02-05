@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, Input, Output, EventEmitter, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-hello',
@@ -13,9 +13,13 @@ export class HelloComponent implements OnInit {
   }
 
   @Input()
-  title:string;
+  title: string;
 
   @Input('referrals')
-  count:number = 0;
+  count: number = 0;
+
+  @Output() increment = new EventEmitter<number>();
+  votes: number = 0;
+  upvote() { this.increment.emit(this.votes++); }
 
 }
