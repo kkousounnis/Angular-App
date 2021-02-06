@@ -7,4 +7,14 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Hello World!!!';
+  subtitle = "Interpolation Tricks";
+  getVal(){ return " Rocks"; } 
+
+  view(votes: number) {
+    console.log(votes);
+  }
+
+  buttonContent = "Click";
+  inputValue = "Javascript";
+  imgSrc = "https://picsum.photos/500/300";
 }

@@ -8,5 +8,13 @@
 <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
 
 <app-hello [referrals]="42" [title]="'OMG'"></app-hello>
-
+<app-hello (increment) = "view($event)"> First</app-hello>
+<app-hello (increment) = "view($event)"> Second</app-hello>
 <router-outlet></router-outlet>
+<h2>{{subtitle}}</h2>
+<p>Angular{{getVal()}}</p>
+<p>5+7 = {{5+7}} </p>
+
+<button [innerHTML]="buttonContent"></button>
+<input [value]="inputValue" type="text"/>
+<img alt="random" [src]="imgSrc" />
