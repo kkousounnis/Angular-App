@@ -11,13 +11,5 @@ export class MainService {
   getData() {
     return this.http.get(this.URL);
   }
+  
 }
-
-
-// getData() {
-//   return [
-//     { id: 1, name: "Java" },
-//     { id: 2, name: "Databases" },
-//     { id: 3, name: "JavaScript" }
-//   ];
-// }

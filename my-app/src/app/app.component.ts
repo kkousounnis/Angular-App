@@ -34,11 +34,11 @@ export class AppComponent {
   isAdult() { return this.age > 17; }
   plays = ["Hamlet", "Othello", "Coriolanus"];
 
-  data: any = [];
+  data:any = [];
   constructor(private mainService: MainService) { }
   ngOnInit() {
     this.mainService.getData().subscribe(data => {       
-      this.data = data[1];
+      this.data = data;
     });
   }
 }

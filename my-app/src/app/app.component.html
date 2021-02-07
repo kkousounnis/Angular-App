@@ -6,7 +6,7 @@
 <!-- * * * * * * * * * * End of Placeholder * * * * * * * * * * * -->
 <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
 
-<app-hello [referrals]="42" [title]="'OMG'"></app-hello>
+<!-- <app-hello [referrals]="42" [title]="'OMG'"></app-hello>
 <app-hello (increment)="view($event)"> First</app-hello>
 <app-hello (increment)="view($event)"> Second</app-hello>
 <router-outlet></router-outlet>
@@ -28,6 +28,8 @@
     <li *ngFor="let play of plays">Title: <strong>{{ play }}</strong></li>
 </ul>
 
-<p *ngFor="let course of data">
-    {{ course.id }} - <strong>{{ course.name }}</strong>
-</p>
+<p *ngFor="let data of data">
+    {{ data.id }} - <strong>{{ data.name }}</strong>
+</p> -->
+
+<app-calculator></app-calculator>
