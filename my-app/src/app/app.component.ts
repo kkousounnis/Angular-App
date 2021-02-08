@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import { MainService } from './services/main.service'; // Import our Service here
 
 @Component({
   selector: 'app-root',
@@ -7,8 +6,7 @@ import { MainService } from './services/main.service'; // Import our Service her
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'Hello World!!!';
-  subtitle = "Interpolation Tricks";
+
   getVal() { return " Rocks"; }
 
   view(votes: number) {
@@ -29,16 +27,8 @@ export class AppComponent {
     this.text = event.target.value;
 
   }
-  active = true;
-  age = 10;
-  isAdult() { return this.age > 17; }
-  plays = ["Hamlet", "Othello", "Coriolanus"];
-
-  data:any = [];
-  constructor(private mainService: MainService) { }
+  
+  constructor() { }
   ngOnInit() {
-    this.mainService.getData().subscribe(data => {       
-      this.data = data;
-    });
   }
 }
